@@ -305,7 +305,7 @@ ExecStart: Set your values
 ```
 # listener.service
 [Unit]
-Description=Cobalt Strike aggressor service & argo Tunnel service! xss.is
+Description=Cobalt Strike aggressor service & argo Tunnel service!
 After=teamserver.service network.target
 Wants=teamserver.service
 StartLimitIntervalSec=33
