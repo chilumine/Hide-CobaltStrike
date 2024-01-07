@@ -107,7 +107,7 @@ cloudflared tunnel --url 127.0.0.1:31337
 cloudflare has now completed the assignment of our private cobalt strike tunnel; ( https://assisted-same -*******.trycloudflare.com ); let's map our inner port to catch the target;
 
 ```
-./ding -config=./ding.cfg -subdomain=r1z 31337
+./ding -config=./ding.cfg -subdomain= 31337
 ```
 
 bing for windows/linux/mac OS
@@ -238,7 +238,7 @@ After=syslog.target network-online.target
 Type=simple
 User=cloudflared
 EnvironmentFile=/etc/default/cloudflared
-ExecStart=/usr/local/bin/cloudflared proxy-dns $COBALTSTRIKE_R1Z_XSS.IS
+ExecStart=/usr/local/bin/cloudflared proxy-dns $COBALTSTRIKE_DSAS_INJECT.DEV
 Restart=on-failure
 RestartSec=10
 KillMode=process
